@@ -4,7 +4,7 @@
 Summary:	XML::LibXSLT - Interface to the Gnome libxslt library
 Summary(pl):	XML::LibXSLT - Interfejs do biblioteki libxslt z Gnome
 Name:		perl-%{pdir}-%{pnam}
-Version:	1.52
+Version:	1.53
 Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
