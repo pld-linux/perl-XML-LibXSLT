@@ -8,7 +8,7 @@ Version:	1.52
 Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
-Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	libxslt-devel >= 1.0.6
 BuildRequires:	perl-XML-LibXML >= 1.30
 BuildRequires:	perl-devel >= 5.6.1
