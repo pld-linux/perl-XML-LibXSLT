@@ -15,8 +15,8 @@ BuildRequires:	rpm-perlprov >= 4.0.2-56
 BuildRequires:	perl-devel >= 5.6.1
 BuildRequires:	perl-XML-LibXML >= 1.30
 BuildRequires:	libxslt-devel >= 1.0.6
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires:	libxslt >= 1.0.6
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This module is an interface to the gnome project's libxslt. This is an
