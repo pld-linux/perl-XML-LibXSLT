@@ -6,7 +6,7 @@
 Summary:	XML::LibXSLT perl module
 Summary(pl):	Modu³ perla XML::LibXSLT
 Name:		perl-%{pdir}-%{pnam}
-Version:	1.31
+Version:	1.50
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
@@ -52,6 +52,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc *.gz
 %{perl_sitearch}/XML/LibXSLT.pm
+%{perl_sitearch}/XML/benchmark.pl
 %dir %{perl_sitearch}/auto/XML/LibXSLT
 %{perl_sitearch}/auto/XML/LibXSLT/LibXSLT.bs
 %attr(755,root,root) %{perl_sitearch}/auto/XML/LibXSLT/LibXSLT.so
