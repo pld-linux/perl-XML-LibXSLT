@@ -1,12 +1,12 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	XML
 %define	pnam	LibXSLT
-Summary:	XML::LibXSLT perl module
-Summary(pl):	Modu³ perla XML::LibXSLT
+Summary:	XML::LibXSLT - Interface to the Gnome libxslt library
+Summary(pl):	XML::LibXSLT - Interfejs do biblioteki libxslt z Gnome
 Name:		perl-%{pdir}-%{pnam}
-Version:	1.50
+Version:	1.52
 Release:	1
-License:	GPL
+License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	libxslt-devel >= 1.0.6
@@ -35,10 +35,10 @@ perl Makefile.PL
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
+install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 install example/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
