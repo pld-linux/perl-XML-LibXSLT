@@ -5,14 +5,14 @@ Summary:	XML::LibXSLT - Interface to the Gnome libxslt library
 Summary(pl):	XML::LibXSLT - Interfejs do biblioteki libxslt z Gnome
 Name:		perl-%{pdir}-%{pnam}
 Version:	1.53
-Release:	1
+Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	libxslt-devel >= 1.0.6
 BuildRequires:	perl-XML-LibXML >= 1.30
 BuildRequires:	perl-devel >= 5.6.1
-BuildRequires:	rpm-perlprov >= 4.0.2-56
+BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	libxslt >= 1.0.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -30,7 +30,8 @@ szybki. Wed³ug testów jest ponad dwa razy szybszy od Sablotrona.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
@@ -47,10 +48,10 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_sitearch}/XML/LibXSLT.pm
-%{perl_sitearch}/XML/benchmark.pl
-%dir %{perl_sitearch}/auto/XML/LibXSLT
-%{perl_sitearch}/auto/XML/LibXSLT/LibXSLT.bs
-%attr(755,root,root) %{perl_sitearch}/auto/XML/LibXSLT/LibXSLT.so
+%{perl_vendorarch}/XML/LibXSLT.pm
+%{perl_vendorarch}/XML/benchmark.pl
+%dir %{perl_vendorarch}/auto/XML/LibXSLT
+%{perl_vendorarch}/auto/XML/LibXSLT/LibXSLT.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/XML/LibXSLT/LibXSLT.so
 %{_mandir}/man3/*
 %{_examplesdir}/%{name}-%{version}
