@@ -32,7 +32,7 @@ szybki. Wed³ug testów jest ponad dwa razy szybszy od Sablotrona.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
