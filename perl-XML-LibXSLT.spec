@@ -3,8 +3,8 @@
 %define	pdir	XML
 %define	pnam	LibXSLT
 
-Summary:	XML-LibXSLT perl module
-Summary(pl):	Modu³ perla XML-LibXSLT
+Summary:	XML::LibXSLT perl module
+Summary(pl):	Modu³ perla XML::LibXSLT
 Name:		perl-%{pdir}-%{pnam}
 Version:	1.31
 Release:	1
