@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_with	tests	# perform "make test" (fails in 1.53)
+%bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	XML
@@ -10,7 +10,8 @@ Summary(pl):	XML::LibXSLT - interfejs do biblioteki libxslt z GNOME
 Name:		perl-%{pdir}-%{pnam}
 Version:	1.57
 Release:	1
-License:	GPL/Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	9b831bc5a97444103f345105f0f6fced
