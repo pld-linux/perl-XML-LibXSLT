@@ -5,8 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	XML
 %define	pnam	LibXSLT
-Summary:	XML::LibXSLT - Interface to the GNOME libxslt library
-Summary(pl):	XML::LibXSLT - Interfejs do biblioteki libxslt z GNOME
+Summary:	XML::LibXSLT - interface to the GNOME libxslt library
+Summary(pl):	XML::LibXSLT - interfejs do biblioteki libxslt z GNOME
 Name:		perl-%{pdir}-%{pnam}
 Version:	1.57
 Release:	1
