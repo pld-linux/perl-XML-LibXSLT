@@ -20,8 +20,8 @@ Requires:	libxslt >= 1.0.6
 
 %description
 This module is an interface to the gnome project's libxslt. This is an
-extremely good XSLT engine, highly compliant and also very fast.
-I have tests showing this to be more than twice as fast as Sablotron.
+extremely good XSLT engine, highly compliant and also very fast. I
+have tests showing this to be more than twice as fast as Sablotron.
 
 %description -l pl
 Ten modu³ jest interfejsem do libxslt z projektu GNOME. Jest to bardzo
