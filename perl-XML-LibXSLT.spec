@@ -12,7 +12,7 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 BuildRequires:	libxslt-devel >= 1.0.6
 BuildRequires:	perl-XML-LibXML >= 1.30
 BuildRequires:	perl-devel >= 5.6.1
-BuildRequires:	rpm-perlprov >= 4.0.2-56
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 Requires:	libxslt >= 1.0.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
