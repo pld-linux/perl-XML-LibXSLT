@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	XML
-%define	pnam	LibXSLT
+%define		pdir	XML
+%define		pnam	LibXSLT
 Summary:	XML::LibXSLT - interface to the GNOME libxslt library
 Summary(pl):	XML::LibXSLT - interfejs do biblioteki libxslt z GNOME
 Name:		perl-XML-LibXSLT
