@@ -9,6 +9,7 @@ Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	1fc25bedd58fbf9f3faf0d4936632645
 BuildRequires:	libxslt-devel >= 1.0.6
 BuildRequires:	perl-XML-LibXML >= 1.30
 BuildRequires:	perl-devel >= 5.6.1
