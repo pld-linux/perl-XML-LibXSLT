@@ -6,7 +6,7 @@
 %define		pdir	XML
 %define		pnam	LibXSLT
 Summary:	XML::LibXSLT - interface to the GNOME libxslt library
-Summary(pl):	XML::LibXSLT - interfejs do biblioteki libxslt z GNOME
+Summary(pl.UTF-8):   XML::LibXSLT - interfejs do biblioteki libxslt z GNOME
 Name:		perl-XML-LibXSLT
 Version:	1.61
 Release:	1
@@ -29,10 +29,10 @@ This module is an interface to the GNOME project's libxslt. This is an
 extremely good XSLT engine, highly compliant and also very fast. I
 have tests showing this to be more than twice as fast as Sablotron.
 
-%description -l pl
-Ten modu≥ jest interfejsem do libxslt z projektu GNOME. Jest to bardzo
-dobry silnik XSLT, o duøej zgodno∂ci ze standardem, a takøe bardzo
-szybki. Wed≥ug testÛw jest ponad dwa razy szybszy od Sablotrona.
+%description -l pl.UTF-8
+Ten modu≈Ç jest interfejsem do libxslt z projektu GNOME. Jest to bardzo
+dobry silnik XSLT, o du≈ºej zgodno≈õci ze standardem, a tak≈ºe bardzo
+szybki. Wed≈Çug test√≥w jest ponad dwa razy szybszy od Sablotrona.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
