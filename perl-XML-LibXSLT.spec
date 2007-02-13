@@ -6,7 +6,7 @@
 %define		pdir	XML
 %define		pnam	LibXSLT
 Summary:	XML::LibXSLT - interface to the GNOME libxslt library
-Summary(pl.UTF-8):   XML::LibXSLT - interfejs do biblioteki libxslt z GNOME
+Summary(pl.UTF-8):	XML::LibXSLT - interfejs do biblioteki libxslt z GNOME
 Name:		perl-XML-LibXSLT
 Version:	1.61
 Release:	1
