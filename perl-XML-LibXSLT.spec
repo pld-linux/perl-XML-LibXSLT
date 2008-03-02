@@ -8,14 +8,13 @@
 Summary:	XML::LibXSLT - interface to the GNOME libxslt library
 Summary(pl.UTF-8):	XML::LibXSLT - interfejs do biblioteki libxslt z GNOME
 Name:		perl-XML-LibXSLT
-Version:	1.61
-Release:	2
+Version:	1.66
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	830ec12454ae14ee9145fee9b3b7c6aa
-Patch0:		%{name}-error.patch
+# Source0-md5:	cfabf853c7139fb21948a31bc77e6ac7
 BuildRequires:	libxslt-devel >= 1.0.6
 BuildRequires:	perl-XML-LibXML >= 1.60
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -36,7 +35,6 @@ szybki. Według testów jest ponad dwa razy szybszy od Sablotrona.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
-%patch0 -p1
 
 %build
 %{__perl} Makefile.PL \
