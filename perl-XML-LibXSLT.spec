@@ -19,6 +19,7 @@ URL:		http://search.cpan.org/dist/XML-LibXSLT/
 BuildRequires:	libxslt-devel >= 1.0.6
 BuildRequires:	perl-XML-LibXML >= 1.60
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	pkgconfig
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	libxslt >= 1.0.6
 Requires:	perl-XML-LibXML >= 1.57
