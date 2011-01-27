@@ -21,6 +21,11 @@ BuildRequires:	perl-XML-LibXML >= 1.60
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	pkgconfig
 BuildRequires:	rpm-perlprov >= 4.1-13
+%if %{with tests}
+%if "%(perl -MXML::LibXML -e 'print XML::LibXML::LIBXML_VERSION == XML::LibXML::LIBXML_RUNTIME_VERSION || 0' 2>/dev/null)" == "0"
+BuildRequires:	REBUILD-perl-XML-LibXML
+%endif
+%endif
 Requires:	libxslt >= 1.0.6
 Requires:	perl-XML-LibXML >= 1.57
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
