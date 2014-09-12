@@ -69,7 +69,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README
 %{perl_vendorarch}/XML/LibXSLT.pm
 %dir %{perl_vendorarch}/auto/XML/LibXSLT
-%{perl_vendorarch}/auto/XML/LibXSLT/LibXSLT.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/XML/LibXSLT/LibXSLT.so
 %{_mandir}/man3/*
 %{_examplesdir}/%{name}-%{version}
