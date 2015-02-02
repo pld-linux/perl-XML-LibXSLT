@@ -8,13 +8,13 @@
 Summary:	XML::LibXSLT - interface to the GNOME libxslt library
 Summary(pl.UTF-8):	XML::LibXSLT - interfejs do biblioteki libxslt z GNOME
 Name:		perl-XML-LibXSLT
-Version:	1.80
-Release:	4
+Version:	1.94
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/XML/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	bd8d0eaeee311a6dc148963a3f7753c6
+# Source0-md5:	a32045699c001d960d6f94891f9e853c
 URL:		http://search.cpan.org/dist/XML-LibXSLT/
 BuildRequires:	libxslt-devel >= 1.1.28
 BuildRequires:	perl-XML-LibXML >= 1.75
@@ -66,9 +66,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changes README
+%doc Changes LICENSE README
 %{perl_vendorarch}/XML/LibXSLT.pm
 %dir %{perl_vendorarch}/auto/XML/LibXSLT
 %attr(755,root,root) %{perl_vendorarch}/auto/XML/LibXSLT/LibXSLT.so
-%{_mandir}/man3/*
+%{_mandir}/man3/XML::LibXSLT.3pm*
 %{_examplesdir}/%{name}-%{version}
