@@ -7,17 +7,17 @@
 Summary:	XML::LibXSLT - interface to the GNOME libxslt library
 Summary(pl.UTF-8):	XML::LibXSLT - interfejs do biblioteki libxslt z GNOME
 Name:		perl-XML-LibXSLT
-Version:	1.99
-Release:	3
+Version:	2.002000
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/XML/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	1a2b2295c4e0088015cf5ea947da5579
+# Source0-md5:	5c8408ffbe3cfa4ecadde228d5b57639
 URL:		https://metacpan.org/release/XML-LibXSLT
 BuildRequires:	libxslt-devel >= 1.1.28
 BuildRequires:	perl-XML-LibXML >= 1.75
-BuildRequires:	perl-devel >= 1:5.8.1
+BuildRequires:	perl-devel >= 1:5.14
 BuildRequires:	pkgconfig
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	rpmbuild(macros) >= 1.745
@@ -68,7 +68,9 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes LICENSE README
 %{perl_vendorarch}/XML/LibXSLT.pm
+%{perl_vendorarch}/XML/LibXSLT
 %dir %{perl_vendorarch}/auto/XML/LibXSLT
 %attr(755,root,root) %{perl_vendorarch}/auto/XML/LibXSLT/LibXSLT.so
 %{_mandir}/man3/XML::LibXSLT.3pm*
+%{_mandir}/man3/XML::LibXSLT::Quick.3pm*
 %{_examplesdir}/%{name}-%{version}
