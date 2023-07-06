@@ -8,7 +8,7 @@ Summary:	XML::LibXSLT - interface to the GNOME libxslt library
 Summary(pl.UTF-8):	XML::LibXSLT - interfejs do biblioteki libxslt z GNOME
 Name:		perl-XML-LibXSLT
 Version:	2.002000
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
