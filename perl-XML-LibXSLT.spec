@@ -1,19 +1,19 @@
 #
 # Conditional build:
-%bcond_without	tests	# do not perform "make test"
+%bcond_without	tests	# unit tests
 #
 %define		pdir	XML
 %define		pnam	LibXSLT
 Summary:	XML::LibXSLT - interface to the GNOME libxslt library
 Summary(pl.UTF-8):	XML::LibXSLT - interfejs do biblioteki libxslt z GNOME
 Name:		perl-XML-LibXSLT
-Version:	2.002001
-Release:	2
+Version:	2.003000
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/XML/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	b47ac3a69b58fa43386c4f39be5d7bd5
+Source0:	https://www.cpan.org/modules/by-module/XML/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	632dce587b3c405edd4e622364750191
 URL:		https://metacpan.org/dist/XML-LibXSLT
 BuildRequires:	libxslt-devel >= 1.1.28
 BuildRequires:	perl-XML-LibXML >= 1.75
